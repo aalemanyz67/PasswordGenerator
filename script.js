@@ -25,7 +25,7 @@ function generatePassword() {
   console.log("button works");
 
 
-  var passwordLength = window.prompt("How long do you want the password to be?")
+  var passwordLength = window.prompt("How long do you want the password to be? 8 or more characters.")
 
 
   if (passwordLength > 128) {
@@ -36,7 +36,7 @@ function generatePassword() {
   }
   if (passwordLength < 8) {
     window.alert("Password is to short, try again!")
-    return "try again"
+    return "Try Again"
   }
   var specialCharacters = window.confirm("Do you want to use special characters?")
   var lowercaseCharacters = window.confirm("Do you want to use lowercase characters?")
